@@ -47,6 +47,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800&amp;display=swap" rel="stylesheet">
 	<style type="text/css">
 	body{font-family: 'Libre Franklin', sans-serif;}
+	.Russian {
+			display: none;
+		}
 </style>
 </head>
 <body class="cextension-simple_blog-article ltr layout-1 loaded">
@@ -75,10 +78,15 @@
 								</button>
 								<ul class="dropdown-menu">
 									<li>
-										<button class="btn-block language-select" type="button" name="ar-ar"><img src="image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Russian</button>
+										<button id="Russian" class="btn-block" type="button" name="en-gb">
+											<img src="image/catalog/flags/ar.png" alt="Russian" title="Russian" />
+											Russian
+										</button>
 									</li>
 									<li>
-										<button class="btn-block language-select" type="button" name="en-gb"><img src="image/catalog/flags/gb.png" alt="English" title="English" /> English</button>
+										<button id="English" class="btn-block" type="button" name="en-gb"><img
+												src="image/catalog/flags/gb.png" alt="English"
+												title="English" />English</button>
 									</li>
 								</ul>
 							</div>
@@ -132,16 +140,28 @@
 												<span id="remove-megamenu" class="fa fa-times"></span>
 												<div class="megamenu-pattern">
 													<div class="container">
-														<ul class="megamenu" data-transition="slide" data-animationtime="500">
+														<ul class="megamenu" data-transition="slide"
+															data-animationtime="500">
 															<!-- <li class="menu-home with-sub-menu hover"> -->
-																<li><a class="active" href="index.html">Home</a></li>
+															<li>
+																<a class="active" href="index.html">
+																	<span class="english">Home</span>
+																	<span class="Russian">Домой</span>
+																</a>
 															</li>
-															<li><a class="" href="about-us.html">about-us</a></li>
+															</li>
+															<li>
+																<a href="about-us.html">
+																	<span class="english">about-us</span>
+																	<span class="Russian">насчет нас</span>
+																</a>
+															</li>
 															<li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
-																<a  class="clearfix">
+																<a class="clearfix">
 																	<strong>
-																		Mountains
+																		<span class="english">Mountains</span>
+																		<span class="Russian">Горы</span>
 																	</strong>
 																	<span class="labelwordpress"></span>
 																</a>
@@ -150,8 +170,13 @@
 																		<div class="row">
 																			<div class="col-md-12">
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="tour.html">Mt.Kilimanjaro</a></li>
-																					<li><a class="subcategory_item" href="meru.html">Mt.Meru</a></li>
+																					<li>
+																						<a class="subcategory_item"
+																							href="kilimanjaro.html">Mt.Kilimanjaro</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="meru.html">Mt.Meru</a>
+																					</li>
 																					<!-- <li><a class="subcategory_item" href="tour-detail.html">Tour Single</a></li> -->
 																				</ul>
 																			</div>
@@ -161,33 +186,64 @@
 															</li>
 															<li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
-																<a  class="clearfix">
+																<a class="clearfix">
 																	<strong>
-																		Destination
+																		<span class="english">Destination</span>
+																		<span class="Russian">
+																			Пункт назначения
+																		</span>
 																	</strong>
+																	<!-- <strong class="Russian">
+																		Пункт назначения
+																	</strong> -->
 																	<span class="labelNew"></span>
 																</a>
 																<div class="sub-menu" style="width: 90%;">
 																	<div class="content">
 																		<div class="row">
 																			<div class="col-md-6">
-																				<h3>Northern Circuit</h3>
+																				<h3>
+																					<span class="english">Northern
+																						Circuit</span>
+																					<span class="Russian">Северная
+																						цепь</span>
+																				</h3>
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="arusha.html">Arusha Park</a></li>
-																					<li><a class="subcategory_item" href="manyara.html">Lake Manyara</a></li>
-																					<li><a class="subcategory_item" href="ngorongoro.html">Ngorongoro </a></li>
-																					<li><a class="subcategory_item" href="serengeti.html">Serengeti National park</a></li>
-																					<li><a class="subcategory_item" href="taragire.html">Taragire National park</a></li>
+																					<li><a class="subcategory_item"
+																							href="arusha.html">Arusha
+																							Park</a></li>
+																					<li><a class="subcategory_item"
+																							href="manyara.html">Lake
+																							Manyara</a></li>
+																					<li><a class="subcategory_item"
+																							href="ngorongoro.html">Ngorongoro
+																						</a></li>
+																					<li><a class="subcategory_item"
+																							href="serengeti.html">Serengeti
+																							National park</a></li>
+																					<li><a class="subcategory_item"
+																							href="taragire.html">Taragire
+																							National park</a></li>
 																				</ul>
 																			</div>
 																			<div class="col-md-6">
 																				<h3>Southern Circuit</h3>
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="destination-list.html">Mikumi</a></li>
-																					<li><a class="subcategory_item" href="destination-detail.html">Ruah National park</a></li>
-																					<li><a class="subcategory_item" href="destination-list.html">Saadani Natonal park</a></li>
-																					<li><a class="subcategory_item" href="destination-list.html">Selous Natonal park</a></li>
-																					<li><a class="subcategory_item" href="destination-list.html">Udzungwa Natonal park</a></li>
+																					<li><a class="subcategory_item"
+																							href="mikumi.html">Mikumi</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="ruah.html">Ruah
+																							National park</a></li>
+																					<li><a class="subcategory_item"
+																							href="saadani.html">Saadani
+																							Natonal park</a></li>
+																					<li><a class="subcategory_item"
+																							href="selous.html">Selous
+																							Natonal park</a></li>
+																					<li><a class="subcategory_item"
+																							href="udzungwa.html">Udzungwa
+																							Natonal park</a></li>
 																				</ul>
 																			</div>
 																		</div>
@@ -196,9 +252,12 @@
 															</li>
 															<li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
-																<a  class="clearfix">
+																<a class="clearfix">
 																	<strong>
-																		Our Itinerary
+																		<span class="english">Our Itinerary</span>
+																		<span class="Russian">
+																			Наш маршрут
+																		</span>
 																	</strong>
 																</a>
 																<div class="sub-menu" style="width: 40%;">
@@ -206,10 +265,16 @@
 																		<div class="row">
 																			<div class="col-md-12">
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="#">Day trip</a></li>
-																					<li><a class="subcategory_item" href="#">2 Days 1 Night</a></li>
-																					<li><a class="subcategory_item" href="#">3 Days 2 Nights</a></li>
-																					<li><a class="subcategory_item" href="#">11 Days</a></li>
+																					<li><a class="subcategory_item"
+																							href="#">Day trip</a></li>
+																					<li><a class="subcategory_item"
+																							href="#">2 Days 1 Night</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="#">3 Days 2 Nights</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="#">11 Days</a></li>
 																					<!-- <li><a class="subcategory_item" href="#">Open Tour</a></li>
 																					<li><a class="subcategory_item" href="#">Historical</a></li> -->
 																				</ul>
@@ -241,7 +306,11 @@
 																</div>
 															</li> -->
 															<li><a class="active" href="zanzibar.html">Zanzibar</a></li>
-															<li><a class="active" href="contact.html">Contact us</a></li>
+															<li><a class="active" href="contact.html">
+																	<span class="english">Contact us</span>
+																	<span class="Russian">Связаться с нами</span>
+																</a>
+															</li>
 															<!-- <li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
 																<a  class="clearfix">
@@ -341,12 +410,12 @@
 		<div class="breadcrumbs">
 			<div class="container">
 				<div class="title-breadcrumb">
-					Kilimanjaro routs
+					Kilimanjaro <span class="english">Routes</span><span class="Russian">Маршруты</span>
 				</div>
 				<ul class="breadcrumb-cate">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about-us.html">about-us</a></li>
-					<li><a href="kilimanjaro.html">Kilimanjaro Routs</a></li>
+					<li><a href="index.html"><span class="english">Home</span><span class="Russian">Домой</span></a></li>
+					<li><a href="about-us.html"><span class="english">about-us</span><span class="Russian">насчет нас</span></a></li>
+					<li><a href="kilimanjaro.html">Kilimanjaro <span class="english">Routes</span><span class="Russian">Маршруты</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -384,7 +453,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div> -->
 											<div class="readmore">
-												<a href="machame.html" target="_self">view route</a>
+												<a href="machame.html" target="_self"><span class="english">view route</span><span class="Russian">посмотреть маршрут</span></a>
 											</div>
 										</div>										
 									</div>
@@ -422,7 +491,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div> -->
 											<div class="readmore">
-												<a href="lemosho.html" target="_self">View Route</a>
+												<a href="lemosho.html" target="_self"><span class="english">View Route</span><span class="Russian">посмотреть маршрут</span></a>
 											</div>
 										</div>										
 									</div>
@@ -460,7 +529,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div> -->
 											<div class="readmore">
-												<a href="rongai.html" target="_self">view route</a>
+												<a href="rongai.html" target="_self"><span class="english">view route</span><span class="Russian">посмотреть маршрут</span></a>
 											</div>
 										</div>										
 									</div>
@@ -498,7 +567,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div> -->
 											<div class="readmore">
-												<a href="marangu.html" target="_self">View route</a>
+												<a href="marangu.html" target="_self"><span class="english">View route</span><span class="Russian">посмотреть маршрут</span></a>
 											</div>
 										</div>										
 									</div>
@@ -530,13 +599,13 @@
 												</div>
 											</div> -->
 											<h4 class="media-heading head-item">
-												<a href="blog-detail.html" title="Aestibulum ipsum a ornare car" target="_self">to be named</a>
+												<a href="blog-detail.html" title="Aestibulum ipsum a ornare car" target="_self"><span class="english">to be named</span><span class="Russian">быть названным</span></a>
 											</h4>
 											<!-- <div class="description">
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div> -->
 											<div class="readmore">
-												<a href="blog-detail.html" target="_self">Read more</a>
+												<a href="blog-detail.html" target="_self"><span class="english">Read more</span><span class="Russian">Читать далее</span></a>
 											</div>
 										</div>										
 									</div>
@@ -568,13 +637,13 @@
 												</div>
 											</div> -->
 											<h4 class="media-heading head-item">
-												<a href="blog-detail.html" title="Aestibulum ipsum a ornare car" target="_self">To be named</a>
+												<a href="blog-detail.html" title="Aestibulum ipsum a ornare car" target="_self"><span class="english">To be named</span><span class="Russian">быть названным</span></a>
 											</h4>
 											<!-- <div class="description">
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div> -->
 											<div class="readmore">
-												<a href="blog-detail.html" target="_self">Read more</a>
+												<a href="blog-detail.html" target="_self"><span class="english">Read more</span><span class="Russian">Читать далее</span></a>
 											</div>
 										</div>										
 									</div>
@@ -612,7 +681,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div>
 											<div class="readmore">
-												<a href="blog-detail.html" target="_self">Read more</a>
+												<a href="blog-detail.html" target="_self"><span class="english">Read more</span><span class="Russian"></span></a>
 											</div>
 										</div>										
 									</div>
@@ -650,7 +719,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div>
 											<div class="readmore">
-												<a href="blog-detail.html" target="_self">Read more</a>
+												<a href="blog-detail.html" target="_self"><span class="english">Read more</span><span class="Russian"></span></a>
 											</div>
 										</div>										
 									</div>
@@ -688,7 +757,7 @@
 												Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 											</div>
 											<div class="readmore">
-												<a href="blog-detail.html" target="_self">Read more</a>
+												<a href="blog-detail.html" target="_self"><span class="english">Read more</span><span class="Russian"></span></a>
 											</div>
 										</div>										
 									</div>
@@ -719,55 +788,93 @@
 								<div class="row row_hwmc  ">
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<div class="footer-logo">
-											<a href="index.html"><img src="image/logo/logo-footer.png" alt="Your Store" width="194" height="59" title="Your Store"></a>
+											<a href="index.html"><img src="image/logo/logo-footer.png" alt="Your Store"
+													width="194" height="59" title="Your Store"></a>
 										</div>
-										<p>Tropical Triangular Safaris, is a Fully Licensed, reliable Tanzania Tour Operator based in Arusha Tanzania. </p>						
+										<p class="english">Tropical Triangular Safaris, is a Fully Licensed, reliable
+											Tanzania Tour
+											Operator based in Arusha Tanzania. </p>
+										<p class="Russian">Тропический Треугольный Сафари, полностью лицензированный,
+											надежный Тур по Танзании
+											Оператор базируется в Аруше, Танзания.</p>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<h3 class="title-footer">
-											Address
+											<span class="english">Address</span>
+											<span class="Russian">Адрес</span>
 										</h3>
 										<ul class="about-list">
-											<li><i class="fa fa-map-marker" aria-hidden="true"></i><span class="ab-pd">Arusha Tanzania </span></li>
-											<li class="call-mail"><i class="fa fa-paper-plane" aria-hidden="true"></i><a class="ab-pd" href="mailto:contact@wpthemego.com">info@trianglartravelsafris.com</a></li>
-											<li class="call-phone"><i class="fa fa-mobile" aria-hidden="true"></i><a class="ab-pd" href="#"> +255 768 953 339</a></li>
+											<li><i class="fa fa-map-marker" aria-hidden="true"></i><span
+													class="ab-pd">Arusha Tanzania </span></li>
+											<li class="call-mail"><i class="fa fa-paper-plane" aria-hidden="true"></i><a
+													class="ab-pd"
+													href="mailto:contact@wpthemego.com">info@trianglartravelsafris.com</a>
+											</li>
+											<li class="call-phone"><i class="fa fa-mobile" aria-hidden="true"></i><a
+													class="ab-pd" href="#"> +255 768 953 339</a></li>
 										</ul>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<h3 class="title-footer">
-											Useful Links
+											<span class="english">Useful Links</span>
+											<span class="Russian">Полезные ссылки</span>
 										</h3>
 										<ul class="links">
 											<li>
-												<a href="index.html">Home</a>
+												<a href="index.html">
+													<span class="english">Home</span>
+													<span class="Russian">Домой</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">Destination</a>
+												<a href="#">
+													<span class="english">Destination</span>
+													<span class="Russian">Место назначения</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">Itineraries</a>
+												<a href="#">
+													<span class="english">Itineraries</span>
+													<span class="Russian">маршруты</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">3 days safaris</a>
+												<a href="#">
+													<span class="english">3 days safaris</span>
+													<span class="Russian">3 дня сафари</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">Contact</a>
+												<a href="#">
+													<span class="english">Contact</span>
+													<span class="Russian">контакт</span>
+												</a>
 											</li>
 										</ul>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<h3 class="title-footer">
-											Contact
+											<span class="english">Contact</span>
+											<span class="Russian">контакт</span>
 										</h3>
 										<ul class="links">
 											<li>
-												<a href="about-us.html">About Us</a>
+												<a href="about-us.html">
+													<span class="english">About Us</span>
+													<span class="Russian">Насчет нас</span>
+												</a>
 											</li>
 											<li>
-												<a href="contact-us-v1.html">Contact Us</a>
+												<a href="contact-us-v1.html">
+													<span class="english">Contact Us</span>
+													<span class="Russian">Связаться с нами</span>
+												</a>
 											</li>
 											<li>
-												<a href="blog-grid.html">itineraries</a>
+												<a href="blog-grid.html">
+													<span class="english">itineraries</span>
+													<span class="Russian">маршруты</span>
+												</a>
 											</li>
 											<li>
 												<a href="#">Kilimanjaro</a>
@@ -781,7 +888,8 @@
 				</div>
 			</div>
 			<div class="footer-toggle hidden-lg hidden-md">
-				<a class="showmore collapsed" data-toggle="collapse" href="#collapse-footer" aria-expanded="false" aria-controls="collapse-footer">
+				<a class="showmore collapsed" data-toggle="collapse" href="#collapse-footer" aria-expanded="false"
+					aria-controls="collapse-footer">
 					<span class="toggle-more"><i class="fa fa-angle-double-down"></i>Show More</span>
 					<span class="toggle-less"><i class="fa fa-angle-double-up"></i>Show less</span>
 				</a>
@@ -790,16 +898,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-sm-6 copyright">
-							yanivtechnology ©2020. All Rights Reserved. 
+							yanivtechnology ©2020. All Rights Reserved.
 						</div>
 						<div class="col-md-6 col-sm-6 social">
 							<h3>Follows Us:</h3>
 							<ul>
-								<li><a href="https://www.facebook.com/wpthemego" title="Face Book"><span class="fa fa-facebook"></span></a></li>
-								<li><a href="https://twitter.com/wpthemego" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="https://www.pinterest.com/wpthemego/" title="pinterest"><span class="fa fa-pinterest"></span></a></li>
+								<li><a href="https://www.facebook.com/wpthemego" title="Face Book"><span
+											class="fa fa-facebook"></span></a></li>
+								<li><a href="https://twitter.com/wpthemego" title="Twitter"><span
+											class="fa fa-twitter"></span></a></li>
+								<li><a href="https://www.pinterest.com/wpthemego/" title="pinterest"><span
+											class="fa fa-pinterest"></span></a></li>
 								<li><a href="#" title="Instagram"><span class="fa fa-instagram"></span></a></li>
-								<li><a href="https://plus.google.com/u/0/117616422700848151321" title="Google Plus"><span class="fa fa-google-plus"></span></a></li>
+								<li><a href="https://plus.google.com/u/0/117616422700848151321"
+										title="Google Plus"><span class="fa fa-google-plus"></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -835,7 +947,17 @@
 				<script type="text/javascript" src="js/themejs/application.js"></script>
 				<script type="text/javascript" src="js/themejs/homepage.js"></script>
 				<script type="text/javascript" src="js/themejs/custom_h1.js"></script>
-				<script type="text/javascript" src="js/themejs/nouislider.js"></script> 
+				<script type="text/javascript" src="js/themejs/nouislider.js"></script>
+				<script>
+					$("#Russian").click(function () {
+						$(".Russian").toggle();
+						$(".english").toggle();
+					});
+					$("#English").click(function () {
+						$(".english").toggle();
+						$(".Russian").toggle();
+					});
+				</script>
 			</body>
 			
 <!-- Mirrored from demo.wpthemego.com/html/sw_portkey/blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 13:22:11 GMT -->

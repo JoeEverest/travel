@@ -1783,7 +1783,7 @@
       .megamenu-style-dev .responsive div[class^=col-] {
         width: 100%; }
       .megamenu-style-dev .responsive ul.megamenu > li {
-        display: block !important;
+        display: block;
         border-bottom: 1px solid #ddd;
         border-top: none;
         padding: 5px 0;
