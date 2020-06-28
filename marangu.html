@@ -46,8 +46,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700,800&amp;display=swap" rel="stylesheet">
 	<style type="text/css">
-	body{font-family: 'Libre Franklin', sans-serif;}
-</style>
+		body {
+			font-family: 'Libre Franklin', sans-serif;
+		}
+
+		.Russian {
+			display: none;
+		}
+	</style>
 </head>
 
 <body class="res layout-1">
@@ -78,10 +84,15 @@
 								</button>
 								<ul class="dropdown-menu">
 									<li>
-										<button class="btn-block language-select" type="button" name="ar-ar"><img src="image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Russia</button>
+										<button id="Russian" class="btn-block" type="button" name="en-gb">
+											<img src="image/catalog/flags/ar.png" alt="Russian" title="Russian" />
+											Russian
+										</button>
 									</li>
 									<li>
-										<button class="btn-block language-select" type="button" name="en-gb"><img src="image/catalog/flags/gb.png" alt="English" title="English" /> English</button>
+										<button id="English" class="btn-block" type="button" name="en-gb"><img
+												src="image/catalog/flags/gb.png" alt="English"
+												title="English" />English</button>
 									</li>
 								</ul>
 							</div>
@@ -135,16 +146,28 @@
 												<span id="remove-megamenu" class="fa fa-times"></span>
 												<div class="megamenu-pattern">
 													<div class="container">
-														<ul class="megamenu" data-transition="slide" data-animationtime="500">
+														<ul class="megamenu" data-transition="slide"
+															data-animationtime="500">
 															<!-- <li class="menu-home with-sub-menu hover"> -->
-																<li><a class="active" href="index.html">Home</a></li>
+															<li>
+																<a class="active" href="index.html">
+																	<span class="english">Home</span>
+																	<span class="Russian">Домой</span>
+																</a>
 															</li>
-															<li><a class="" href="about-us.html">about-us</a></li>
+															</li>
+															<li>
+																<a href="about-us.html">
+																	<span class="english">about-us</span>
+																	<span class="Russian">насчет нас</span>
+																</a>
+															</li>
 															<li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
-																<a  class="clearfix">
+																<a class="clearfix">
 																	<strong>
-																		Mountains
+																		<span class="english">Mountains</span>
+																		<span class="Russian">Горы</span>
 																	</strong>
 																	<span class="labelwordpress"></span>
 																</a>
@@ -153,8 +176,13 @@
 																		<div class="row">
 																			<div class="col-md-12">
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="kilimanjaro.html">Mt.Kilimanjaro</a></li>
-																					<li><a class="subcategory_item" href="meru.html">Mt.Meru</a></li>
+																					<li>
+																						<a class="subcategory_item"
+																							href="kilimanjaro.html">Mt.Kilimanjaro</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="meru.html">Mt.Meru</a>
+																					</li>
 																					<!-- <li><a class="subcategory_item" href="tour-detail.html">Tour Single</a></li> -->
 																				</ul>
 																			</div>
@@ -164,33 +192,64 @@
 															</li>
 															<li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
-																<a  class="clearfix">
+																<a class="clearfix">
 																	<strong>
-																		Destination
+																		<span class="english">Destination</span>
+																		<span class="Russian">
+																			Пункт назначения
+																		</span>
 																	</strong>
+																	<!-- <strong class="Russian">
+																		Пункт назначения
+																	</strong> -->
 																	<span class="labelNew"></span>
 																</a>
 																<div class="sub-menu" style="width: 90%;">
 																	<div class="content">
 																		<div class="row">
 																			<div class="col-md-6">
-																				<h3>Northern Circuit</h3>
+																				<h3>
+																					<span class="english">Northern
+																						Circuit</span>
+																					<span class="Russian">Северная
+																						цепь</span>
+																				</h3>
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="arusha.html">Arusha Park</a></li>
-																					<li><a class="subcategory_item" href="manyara.html">Lake Manyara</a></li>
-																					<li><a class="subcategory_item" href="ngorongoro.html">Ngorongoro </a></li>
-																					<li><a class="subcategory_item" href="serengeti.html">Serengeti National park</a></li>
-																					<li><a class="subcategory_item" href="taragire.html">Taragire National park</a></li>
+																					<li><a class="subcategory_item"
+																							href="arusha.html">Arusha
+																							Park</a></li>
+																					<li><a class="subcategory_item"
+																							href="manyara.html">Lake
+																							Manyara</a></li>
+																					<li><a class="subcategory_item"
+																							href="ngorongoro.html">Ngorongoro
+																						</a></li>
+																					<li><a class="subcategory_item"
+																							href="serengeti.html">Serengeti
+																							National park</a></li>
+																					<li><a class="subcategory_item"
+																							href="taragire.html">Taragire
+																							National park</a></li>
 																				</ul>
 																			</div>
 																			<div class="col-md-6">
 																				<h3>Southern Circuit</h3>
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="destination-list.html">Mikumi</a></li>
-																					<li><a class="subcategory_item" href="destination-detail.html">Ruah National park</a></li>
-																					<li><a class="subcategory_item" href="destination-list.html">Saadani Natonal park</a></li>
-																					<li><a class="subcategory_item" href="destination-list.html">Selous Natonal park</a></li>
-																					<li><a class="subcategory_item" href="destination-list.html">Udzungwa Natonal park</a></li>
+																					<li><a class="subcategory_item"
+																							href="mikumi.html">Mikumi</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="ruah.html">Ruah
+																							National park</a></li>
+																					<li><a class="subcategory_item"
+																							href="saadani.html">Saadani
+																							Natonal park</a></li>
+																					<li><a class="subcategory_item"
+																							href="selous.html">Selous
+																							Natonal park</a></li>
+																					<li><a class="subcategory_item"
+																							href="udzungwa.html">Udzungwa
+																							Natonal park</a></li>
 																				</ul>
 																			</div>
 																		</div>
@@ -199,9 +258,12 @@
 															</li>
 															<li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
-																<a  class="clearfix">
+																<a class="clearfix">
 																	<strong>
-																		Our Itinerary
+																		<span class="english">Our Itinerary</span>
+																		<span class="Russian">
+																			Наш маршрут
+																		</span>
 																	</strong>
 																</a>
 																<div class="sub-menu" style="width: 40%;">
@@ -209,10 +271,16 @@
 																		<div class="row">
 																			<div class="col-md-12">
 																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="#">Day trip</a></li>
-																					<li><a class="subcategory_item" href="#">2 Days 1 Night</a></li>
-																					<li><a class="subcategory_item" href="#">3 Days 2 Nights</a></li>
-																					<li><a class="subcategory_item" href="#">11 Days</a></li>
+																					<li><a class="subcategory_item"
+																							href="#">Day trip</a></li>
+																					<li><a class="subcategory_item"
+																							href="#">2 Days 1 Night</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="#">3 Days 2 Nights</a>
+																					</li>
+																					<li><a class="subcategory_item"
+																							href="#">11 Days</a></li>
 																					<!-- <li><a class="subcategory_item" href="#">Open Tour</a></li>
 																					<li><a class="subcategory_item" href="#">Historical</a></li> -->
 																				</ul>
@@ -244,7 +312,11 @@
 																</div>
 															</li> -->
 															<li><a class="active" href="zanzibar.html">Zanzibar</a></li>
-															<li><a class="active" href="contact.html">Contact us</a></li>
+															<li><a class="active" href="contact.html">
+																	<span class="english">Contact us</span>
+																	<span class="Russian">Связаться с нами</span>
+																</a>
+															</li>
 															<!-- <li class="style-page with-sub-menu hover">
 																<p class="close-menu"></p>
 																<a  class="clearfix">
@@ -641,7 +713,8 @@
 								<li><span>Discount (0%):</span><label>$0.00</label></li>
 							</ul> -->
 							<div class="button-submit">
-								<button type="submit" class="button">book now</button>
+								<button class="button"><span class="english">book now</span><span
+										class="Russian">Забронируйте сейчас</span></button>
 							</div>
 						</form>					
 					</div>
@@ -823,9 +896,17 @@
 	<script type="text/javascript" src="js/themejs/homepage.js"></script>
 	<script type="text/javascript" src="js/themejs/custom_h1.js"></script>
 	<script type="text/javascript" src="js/themejs/addtostick.js"></script>
-
+	<script>
+		$("#Russian").click(function () {
+			$(".Russian").toggle();
+			$(".english").toggle();
+		});
+		$("#English").click(function () {
+			$(".english").toggle();
+			$(".Russian").toggle();
+		});
+	</script>
 
 </body>
 
-<!-- Mirrored from demo.wpthemego.com/html/sw_portkey/tour-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 13:18:10 GMT -->
 </html>

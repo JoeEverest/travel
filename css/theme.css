@@ -6504,7 +6504,7 @@ span.fa-stack {
     margin-bottom: 14px;
     position: relative;
     padding-top: 14px; }
-  .tour-plan .item-content .title span {
+    .tour-plan .item-content .title span:first-of-type {
     position: absolute;
     left: -75px;
     top: 5px;
