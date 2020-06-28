@@ -21,7 +21,7 @@
 <!-- Libs CSS
 	============================================ -->
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
 	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link href="css/themecss/lib.css" rel="stylesheet">
@@ -728,7 +728,16 @@
 	<script type="text/javascript" src="js/themejs/application.js"></script>
 	<script type="text/javascript" src="js/themejs/homepage.js"></script>
 	<script type="text/javascript" src="js/themejs/custom_h1.js"></script>
-	<script type="text/javascript" src="js/themejs/nouislider.js"></script> 
+	<script type="text/javascript" src="js/themejs/nouislider.js"></script><script>
+		$("#Russian").click(function () {
+			$(".Russian").toggle();
+			$(".english").toggle();
+		});
+		$("#English").click(function () {
+			$(".english").toggle();
+			$(".Russian").toggle();
+		});
+	</script> 
 </body>
 
 <!-- Mirrored from demo.wpthemego.com/html/sw_portkey/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 13:23:22 GMT -->

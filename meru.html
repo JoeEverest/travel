@@ -21,7 +21,7 @@
 <!-- Libs CSS
 	============================================ -->
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
 	<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link href="css/themecss/lib.css" rel="stylesheet">
@@ -81,10 +81,15 @@
 								</button>
 								<ul class="dropdown-menu">
 									<li>
-										<button class="btn-block language-select" type="button" name="ar-ar"><img src="image/catalog/flags/ar.png" alt="Arabic" title="Arabic" /> Russian</button>
+										<button id="Russian" class="btn-block" type="button" name="en-gb">
+											<img src="image/catalog/flags/ar.png" alt="Russian" title="Russian" />
+											Russian
+										</button>
 									</li>
 									<li>
-										<button class="btn-block language-select" type="button" name="en-gb"><img src="image/catalog/flags/gb.png" alt="English" title="English" /> English</button>
+										<button id="English" class="btn-block" type="button" name="en-gb"><img
+												src="image/catalog/flags/gb.png" alt="English"
+												title="English" />English</button>
 									</li>
 								</ul>
 							</div>
@@ -92,9 +97,6 @@
 							<input type="hidden" name="redirect" value="#" />
 						</form>
 					</div>
-					<!-- <div class="bonus-login pull-right">
-						<a data-toggle="modal" data-target="#so_sociallogin" href="#"><i class="fa fa-user" aria-hidden="true"></i> Sign in</a>
-					</div>		 -->
 				</div>
 			</div>
 			<div class="header-top hidden-compact">
@@ -105,22 +107,6 @@
 								<a href="index.html"><img src="image/catalog/demo/logo/logo.png" alt="Your Store" width="118" height="36" title="Your Store"></a>
 							</div>
 						</div>
-						<!-- <div class="book pull-right">
-							<a href="requiry.html">inquiry</a>
-						</div> -->
-						<!-- <div class="search-top pull-right">
-							<div class="icon-search"><i class="fa fa-search" aria-hidden="true"></i></div>
-							<form method="GET" action="#">
-								<div id="sw_search" class="search input-group">
-									<div class="content-search">
-										<input class="autosearch-input" type="text" value="" size="50" autocomplete="off" placeholder="Search..." name="s">	
-										<span class="input-group-btn">
-											<button type="submit" class="fa fa-search button-search-pro form-button"></button>
-										</span>
-									</div>
-								</div>
-							</form>
-						</div> -->
 						<!-- Menuhome -->
 						<div class="header-menu pull-right">
 							<div class="megamenu-style-dev megamenu-dev">
@@ -309,29 +295,6 @@
 																	<span class="Russian">Связаться с нами</span>
 																</a>
 															</li>
-															<!-- <li class="style-page with-sub-menu hover">
-																<p class="close-menu"></p>
-																<a  class="clearfix">
-																	<strong>
-																		Pages
-																	</strong>
-																</a>
-																<div class="sub-menu" style="width: 40%;">
-																	<div class="content" >
-																		<div class="row">
-																			<div class="col-md-12">
-																				<ul class="row-list">
-																					<li><a class="subcategory_item" href="about-us.html">About us</a></li>
-																					<li><a class="subcategory_item" href="contact-us-v1.html">Contact us</a></li>
-																					<li><a class="subcategory_item" href="contact-us-v2.html">Contact us v2</a></li>
-																					<li><a class="subcategory_item" href="404.html">404 Error</a></li>
-																					<li><a class="subcategory_item" href="faq.html">Faq</a></li>
-																				</ul>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li> -->
 														</ul>
 													</div>
 												</div>
@@ -413,7 +376,7 @@
 					Mt.Meru 
 				</div>
 				<ul class="breadcrumb-cate">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html"><span class="english">Home</span> <span class="Russian">Домой</span></a></li>
 					<li><a href="kilimanjaro.html">Kilimanjaro</a></li>
 					<li><a href="meru.html">Mt. Meru</a></li>
 				</ul>
@@ -437,8 +400,16 @@
 									<i class="fa fa-comments" aria-hidden="true"></i><span>0 comment</span>
 								</div>
 							</div> -->
-							<p>Mount Meru is the second highest mountain in Tanzania and the fifth highest in Africa. It’s a great alternative for those on a stricter climbing budget and some even regard it as a more scenic climb than Mt. Kilimanjaro itself. It’s also a great climb for acclimatisation before conquering Africa’s highest peak.
-								The mountain is a stratovolcano located within Arusha National Park, giving trekkers the chance to spot some of wildlife that inhabits the area. Over 400 species of animals roam the lower slopes of the volcano. These include various birds, buffalos, baboons, warthogs, duikers and the black and white colobus monkey. The ascent is quite steep, with the route to the summit passing over streams, through parkland, montane forest, a giant heather zone and moorland. The summit is reached by a narrow, barren ridge, which provides stunning views of the ash cone lying several thousand feet below in the crater.</p>
+							<p>
+								<span class="english">
+									Mount Meru is the second highest mountain in Tanzania and the fifth highest in Africa. It’s a great alternative for those on a stricter climbing budget and some even regard it as a more scenic climb than Mt. Kilimanjaro itself. It’s also a great climb for acclimatisation before conquering Africa’s highest peak.
+									The mountain is a stratovolcano located within Arusha National Park, giving trekkers the chance to spot some of wildlife that inhabits the area. Over 400 species of animals roam the lower slopes of the volcano. These include various birds, buffalos, baboons, warthogs, duikers and the black and white colobus monkey. The ascent is quite steep, with the route to the summit passing over streams, through parkland, montane forest, a giant heather zone and moorland. The summit is reached by a narrow, barren ridge, which provides stunning views of the ash cone lying several thousand feet below in the crater.	
+								</span>
+								<span class="Russian">
+									Гора Меру - вторая по высоте гора в Танзании и пятая по высоте в Африке. Это отличная альтернатива для тех, у кого бюджет на скалолазание более строгий, а некоторые даже считают его более живописным, чем Mt. Сам Килиманджаро. Это также большой подъем для акклиматизации до покорения самой высокой вершины Африки.
+Гора представляет собой стратовулкан, расположенный в Арушском национальном парке, что дает путешественникам возможность увидеть некоторых диких животных, обитающих в этом районе. Более 400 видов животных бродят по нижним склонам вулкана. К ним относятся различные птицы, буйволы, бабуины, бородавочники, дуйкеры и черно-белые колобусы. Подъем довольно крутой, путь к вершине проходит через ручьи, через парки, горный лес, зону гигантского вереска и вересковую пустошь. Вершина достигает узкого, бесплодного горного хребта, который обеспечивает ошеломляющие виды пепельного конуса, лежащего несколько тысяч футов ниже в кратере.
+								</span>
+							</p>
 						</div>
 						<!-- <div class="entry-tag clearfix">
 							<div class="tag pull-left">
@@ -502,7 +473,8 @@
 													Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 												</div> -->
 												<div class="readmore">
-													<a href="machame.html" target="_self">Read more</a>
+													<a href="machame.html" target="_self"><span class="english">Read
+														more</span><span class="Russian">Читать далее</span></a>
 												</div>
 											</div>
 										</div>
@@ -532,7 +504,8 @@
 													Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 												</div> -->
 												<div class="readmore">
-													<a href="Lemosho.html" target="_self">Read more</a>
+													<a href="Lemosho.html" target="_self"><span class="english">Read
+														more</span><span class="Russian">Читать далее</span></a>
 												</div>
 											</div>
 										</div>
@@ -562,7 +535,8 @@
 													Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium dolorem.que lau...
 												</div> -->
 												<div class="readmore">
-													<a href="rongai.html" target="_self">Read more</a>
+													<a href="rongai.html" target="_self"><span class="english">Read
+														more</span><span class="Russian">Читать далее</span></a>
 												</div>
 											</div>
 										</div>
@@ -663,55 +637,93 @@
 								<div class="row row_hwmc  ">
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<div class="footer-logo">
-											<a href="index.html"><img src="image/logo/logo-footer.png" alt="Your Store" width="194" height="59" title="Your Store"></a>
+											<a href="index.html"><img src="image/logo/logo-footer.png" alt="Your Store"
+													width="194" height="59" title="Your Store"></a>
 										</div>
-										<p>Tropical Triangular Safaris, is a Fully Licensed, reliable Tanzania Tour Operator based in Arusha Tanzania. </p>						
+										<p class="english">Tropical Triangular Safaris, is a Fully Licensed, reliable
+											Tanzania Tour
+											Operator based in Arusha Tanzania. </p>
+										<p class="Russian">Тропический Треугольный Сафари, полностью лицензированный,
+											надежный Тур по Танзании
+											Оператор базируется в Аруше, Танзания.</p>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<h3 class="title-footer">
-											Address
+											<span class="english">Address</span>
+											<span class="Russian">Адрес</span>
 										</h3>
 										<ul class="about-list">
-											<li><i class="fa fa-map-marker" aria-hidden="true"></i><span class="ab-pd">Arusha Tanzania </span></li>
-											<li class="call-mail"><i class="fa fa-paper-plane" aria-hidden="true"></i><a class="ab-pd" href="mailto:contact@wpthemego.com">info@trianglartravelsafris.com</a></li>
-											<li class="call-phone"><i class="fa fa-mobile" aria-hidden="true"></i><a class="ab-pd" href="#"> +255 768 953 339</a></li>
+											<li><i class="fa fa-map-marker" aria-hidden="true"></i><span
+													class="ab-pd">Arusha Tanzania </span></li>
+											<li class="call-mail"><i class="fa fa-paper-plane" aria-hidden="true"></i><a
+													class="ab-pd"
+													href="mailto:contact@wpthemego.com">info@trianglartravelsafris.com</a>
+											</li>
+											<li class="call-phone"><i class="fa fa-mobile" aria-hidden="true"></i><a
+													class="ab-pd" href="#"> +255 768 953 339</a></li>
 										</ul>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<h3 class="title-footer">
-											Useful Links
+											<span class="english">Useful Links</span>
+											<span class="Russian">Полезные ссылки</span>
 										</h3>
 										<ul class="links">
 											<li>
-												<a href="index.html">Home</a>
+												<a href="index.html">
+													<span class="english">Home</span>
+													<span class="Russian">Домой</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">Destination</a>
+												<a href="#">
+													<span class="english">Destination</span>
+													<span class="Russian">Место назначения</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">Itineraries</a>
+												<a href="#">
+													<span class="english">Itineraries</span>
+													<span class="Russian">маршруты</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">3 days safaris</a>
+												<a href="#">
+													<span class="english">3 days safaris</span>
+													<span class="Russian">3 дня сафари</span>
+												</a>
 											</li>
 											<li>
-												<a href="#">Contact</a>
+												<a href="#">
+													<span class="english">Contact</span>
+													<span class="Russian">контакт</span>
+												</a>
 											</li>
 										</ul>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col_6ps1 footer--link">
 										<h3 class="title-footer">
-											Contact
+											<span class="english">Contact</span>
+											<span class="Russian">контакт</span>
 										</h3>
 										<ul class="links">
 											<li>
-												<a href="about-us.html">About Us</a>
+												<a href="about-us.html">
+													<span class="english">About Us</span>
+													<span class="Russian">Насчет нас</span>
+												</a>
 											</li>
 											<li>
-												<a href="contact-us-v1.html">Contact Us</a>
+												<a href="contact-us-v1.html">
+													<span class="english">Contact Us</span>
+													<span class="Russian">Связаться с нами</span>
+												</a>
 											</li>
 											<li>
-												<a href="blog-grid.html">itineraries</a>
+												<a href="blog-grid.html">
+													<span class="english">itineraries</span>
+													<span class="Russian">маршруты</span>
+												</a>
 											</li>
 											<li>
 												<a href="#">Kilimanjaro</a>
@@ -725,7 +737,8 @@
 				</div>
 			</div>
 			<div class="footer-toggle hidden-lg hidden-md">
-				<a class="showmore collapsed" data-toggle="collapse" href="#collapse-footer" aria-expanded="false" aria-controls="collapse-footer">
+				<a class="showmore collapsed" data-toggle="collapse" href="#collapse-footer" aria-expanded="false"
+					aria-controls="collapse-footer">
 					<span class="toggle-more"><i class="fa fa-angle-double-down"></i>Show More</span>
 					<span class="toggle-less"><i class="fa fa-angle-double-up"></i>Show less</span>
 				</a>
@@ -734,16 +747,20 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-sm-6 copyright">
-							yanivtechnology ©2020. All Rights Reserved. 
+							yanivtechnology ©2020. All Rights Reserved.
 						</div>
 						<div class="col-md-6 col-sm-6 social">
 							<h3>Follows Us:</h3>
 							<ul>
-								<li><a href="https://www.facebook.com/wpthemego" title="Face Book"><span class="fa fa-facebook"></span></a></li>
-								<li><a href="https://twitter.com/wpthemego" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-								<li><a href="https://www.pinterest.com/wpthemego/" title="pinterest"><span class="fa fa-pinterest"></span></a></li>
+								<li><a href="https://www.facebook.com/wpthemego" title="Face Book"><span
+											class="fa fa-facebook"></span></a></li>
+								<li><a href="https://twitter.com/wpthemego" title="Twitter"><span
+											class="fa fa-twitter"></span></a></li>
+								<li><a href="https://www.pinterest.com/wpthemego/" title="pinterest"><span
+											class="fa fa-pinterest"></span></a></li>
 								<li><a href="#" title="Instagram"><span class="fa fa-instagram"></span></a></li>
-								<li><a href="https://plus.google.com/u/0/117616422700848151321" title="Google Plus"><span class="fa fa-google-plus"></span></a></li>
+								<li><a href="https://plus.google.com/u/0/117616422700848151321"
+										title="Google Plus"><span class="fa fa-google-plus"></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -779,7 +796,17 @@
 	<script type="text/javascript" src="js/themejs/application.js"></script>
 	<script type="text/javascript" src="js/themejs/homepage.js"></script>
 	<script type="text/javascript" src="js/themejs/custom_h1.js"></script>
-	<script type="text/javascript" src="js/themejs/nouislider.js"></script> 
+	<script type="text/javascript" src="js/themejs/nouislider.js"></script>
+	<script>
+		$("#Russian").click(function () {
+			$(".Russian").toggle();
+			$(".english").toggle();
+		});
+		$("#English").click(function () {
+			$(".english").toggle();
+			$(".Russian").toggle();
+		});
+	</script>
 </body>
 
 <!-- Mirrored from demo.wpthemego.com/html/sw_portkey/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 May 2020 13:23:22 GMT -->
