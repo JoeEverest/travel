@@ -500,7 +500,16 @@
 	<script type="text/javascript" src="js/themejs/homepage.js"></script>
 	<script type="text/javascript" src="js/themejs/custom_h1.js"></script>
 	<script type="text/javascript" src="js/themejs/nouislider.js"></script>
-
+	<script>
+		$("#Russian").click(function () {
+			$(".Russian").toggle();
+			$(".english").toggle();
+		});
+		$("#English").click(function () {
+			$(".english").toggle();
+			$(".Russian").toggle();
+		});
+	</script>
 
 </body>
 
